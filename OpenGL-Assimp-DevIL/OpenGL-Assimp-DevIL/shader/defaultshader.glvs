@@ -1,0 +1,22 @@
+#version 330 core
+//Default Variables
+layout (location = 0) in vec3 position;
+layout (location = 1) in vec3 normal;
+layout (location = 2) in vec2 texCoords;
+uniform mat4 ModelMatrix;
+//-----------------
+
+out vec2 TexCoords;
+out vec3 Normal;
+out vec3 FragPos;
+
+
+uniform mat4 VPMatrix;
+
+void main()
+{
+    gl_Position = VPMatrix * ModelMatrix * vec4(position, 1.0f);
+    TexCoords = texCoords;
+    FragPos = vec3(ModelMatrix * vec4(position, 1.0f));
+    Normal = normal;
+}
