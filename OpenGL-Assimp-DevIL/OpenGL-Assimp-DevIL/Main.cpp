@@ -58,10 +58,12 @@ int main()
 
 	initiate( screenWidth, screenHeight,"GLProject Result");
 	// Scene ID Variables
-	GLuint sponzaID, cubeID;
+	GLuint sponzaID, smallsponzaID;
 
 	// Scenes
 	Scene TargetScene(".\\model\\sponza.obj", sponzaID);		// because of assimp design, the file path require '\\' for path separator
+	TargetScene.loadModel(".\\model\\sponza.obj", smallsponzaID);
+	TargetScene.setModel(smallsponzaID, true, glm::vec3(50, 50, 50), glm::vec3(0.03, 0.03, 0.03));
 
 	// Shaders
 	Shader shader("./shader/defaultshader.glvs", "./shader/defaultshader.glfs", SHADER_FROM_FILE);
