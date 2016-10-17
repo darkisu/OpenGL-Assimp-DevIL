@@ -35,6 +35,9 @@
     <None Include="shader\defaultshader.glfs" />
     <None Include="shader\defaultshader.glvs" />
   </ItemGroup>
+  <ItemGroup>
+    <Object Include="model\sponza.obj" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{29541B00-0336-43D6-AC68-7EF914C494A3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

@@ -16,6 +16,9 @@
     <Filter Include="shaders">
       <UniqueIdentifier>{36b7b77e-8f97-4e84-9d15-a5bf31695ae4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{4a1a6ef4-c90b-4d5a-aca2-623254e7f70d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
@@ -55,5 +58,10 @@
     <None Include="shader\defaultshader.glvs">
       <Filter>shaders</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="model\sponza.obj">
+      <Filter>Models</Filter>
+    </Object>
   </ItemGroup>
 </Project>
